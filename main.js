@@ -32,6 +32,7 @@ function myfunction(){
 
 }   
 
+document.getElementById('btn').onclick = function(){myfunction()};
 
 
 
