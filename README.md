@@ -1,2 +1,3 @@
-# universalConverter
-Collaborative JavaScript Project
+# Universal Converter
+
+Gemeinsames JavaScript Projekt
