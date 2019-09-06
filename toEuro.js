@@ -46,10 +46,11 @@ function convert(amount, convertTo){
         alert("PLEASE SELECT THE CURRENCY")
     }
 
-    console.log(amount + " " + convertTo + " = " + result + "EUR")
+     console.log(amount + " " + convertTo + " = " + result + " " + "EUR")
    
 }
 
+convert(100, "HRK")
 
 
 
