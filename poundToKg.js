@@ -2,7 +2,14 @@
 /* Pound to Kilogram */
 
 /* Params */
-pound:Number
+function poundkg(pnd)
+{
+   // var pound = [Number];
 
+    var kg = parseFloat(pnd / 2.2046);
+
+   
 /* Return */
-kg:Number
+return kg;
+} 
+console.log(poundkg(200));
