@@ -28,6 +28,10 @@ var hrkToEur = currencieRates[5]
 var result = 0
 
 function convert(amount, convertTo){
+
+    var amount = document.getElementById('amount').value;
+    var convertTo = document.getElementById('inputGroupSelect02').value;
+
     if(convertTo === "USD"){
         result = amount * usdToEur
     } else if(convertTo === "CNY"){
@@ -45,12 +49,18 @@ function convert(amount, convertTo){
     } else{
         alert("PLEASE SELECT THE CURRENCY")
     }
-
-     console.log(amount + " " + convertTo + " = " + result + " " + "EUR")
-   
+    console.log(convertTo);
+    
+     result = (amount + " " + convertTo + " = " + result + "EUR");
+     console.log(result);
+    document.getElementById('euroh').innerHTML = result;
 }
 
-convert(100, "HRK")
+document.getElementById('eur').onclick = function(){convert()}; 
+
+
+
+
 
 
 
