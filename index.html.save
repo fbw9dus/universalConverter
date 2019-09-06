@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   
 
     <title>JavaScript Labs</title>
@@ -53,35 +54,6 @@
             <button id="sq">Show Square</button>
         </div>
 
-        <hr>
-
-
-<h4>Berechnen Sie Ihre Währung</h4>
-
-<<<<<<< HEAD
-  <div class="input-group mb-3 currencyCal">
-    <h2>Currency Calculator to Euro</h2>
-    <input type="number" id="amount" value>
-=======
-  <div class="input-group mb-3">
-
-    <input type="number" id="amount" placeholder="Wie viel Geld haben Sie?" value>
->>>>>>> 5388b05b82e676a1e44349a4cd426613a013c38b
-    <select class="custom-select" id="inputGroupSelect02">
-      <option selected>Choose Currency</option>
-      <option value="USD">Dollar "USD"</option>
-      <option value="INR">Rupees</option>
-      <option value="SEK">Kronen(SW)</option>
-      <option value="CHF">Franken(CH)</option>
-      <option value="HRK">Croatian Kuna</option>
-      <option value="CNY">Yuan</option>
-    </select>
-    <div class="input-group-append">
-      <label class="input-group-text" for="inputGroupSelect02">toEuro</label>
-    </div>
-  </div>
-  <button id="eur">Convert Now</button>
-    <h3 id="euroh"></h3>
     </div>
 
       
@@ -94,11 +66,6 @@
     <script src="app.js"></script>
     <script src="loop.js"></script>
     <script src="array.js"></script>
-    <script src="toEuro.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
-    
+    <script src="botros.js"</script>
 </body>
 </html>
