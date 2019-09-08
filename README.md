@@ -1,3 +1,3 @@
 # Universal Converter
 
-Gemeinsames JavaScript Projekt
+Gemeinsames JavaScript-Projekt

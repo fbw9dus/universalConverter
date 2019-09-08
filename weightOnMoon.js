@@ -8,7 +8,7 @@
 
 
 
-// shcwerkraft in erde = 9.8 
+// shcwerkraft in erde = 9.8
 
 // shcwerkraft in moon = 1.6
 
