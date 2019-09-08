@@ -54,11 +54,6 @@
         </div>
 
         <hr>
-
-
-
-
-
   <div class="input-group mb-3 currencyCal">
     <h2>Currency Calculator to Euro</h2>
     <input type="number" id="amount" value>
@@ -74,17 +69,48 @@
     <div class="input-group-append">
       <label class="input-group-text" for="inputGroupSelect02">toEuro</label>
     </div>
-  </div>
-  <button id="eur">Convert Now</button>
+    <button id="eur">Convert Now</button>
     <h3 id="euroh"></h3>
+  </div>
+  <hr>
+  <div id="kmtoMile">
+    <h4>Please enter a number to compare it between Mile and Kilometer</h4>
+    <input type="number" id="km" value>
+    <select class="custom-select" id="mileSelect">
+        <option selected>Choose Your Conventer</option>
+        <option value="mile2km">from mile to km</option>
+        <option value="km2mile">from km to mile</option>
+
+      </select>
+      <h4 id="mile"></h4>
+    <button id="milebtn">Convert</button>
+    
+
     </div>
 
+    <hr>
+
+    <div id="weightOnMoon">
+        <h4>  Are you curious about your weight in the month</h4>
+        <input type="number" id="moon" placeholder="your weigt(kg)" value>
+      
+          <h4 id="moonText"></h4>
+        <button id="moonBtn">Convert</button>
+        
+    
+        </div>
+
+
+
+
+</div>
       
    
 
     
    
-      
+    <script src="weightOnMoon.js"></script> 
+    <script src="kmToMiles.js"></script> 
     <script src="main.js"></script>
     <script src="app.js"></script>
     <script src="loop.js"></script>
