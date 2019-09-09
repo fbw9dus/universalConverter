@@ -46,9 +46,7 @@ function convert(amount, convertTo){
         result = amount * hrkToEur
     } else if (convertTo === "EUR") {
         result = amount
-    } else{
-        alert("PLEASE SELECT THE CURRENCY")
-    }
+    } 
     console.log(convertTo);
     
      result = (amount + " " + convertTo + " = " + result + "EUR");

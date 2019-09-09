@@ -1,9 +1,14 @@
 /* inches to centimeter */
-function inToCm(inch){
+function inToCm( ){
+    var inch = document.getElementById('intocm').value;
     
-    return inch * 2.54
+    var result = inch * 2.54
+
+    document.getElementById('inchText').innerHTML = ("Your result is = " + result);
 }
-console.log( inToCm(100) + "cm")
+
+
+document.getElementById('inchBtn').onclick = function(){inToCm()}
 
 /* Params */
 // inches:Number
