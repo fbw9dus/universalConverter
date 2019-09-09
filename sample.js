@@ -24,17 +24,15 @@ function sample() {
     }
 
     for (a=0;a<5;a++){        
-      for(b=0;b<30;b++){
-        document.write("*");
-      }
-            
+      
+            document.write("*");
         
         document.write("<br>")
     }
     
    }
 
-document.getElementById('starBtn').onclick = function(){sample()}
+sample();
 
 
 /**function sample(){
