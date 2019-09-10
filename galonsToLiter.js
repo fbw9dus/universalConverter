@@ -5,35 +5,28 @@
 
 /* Return */
 // liter:Number
-var oneLiter
-var oneUsGallon
 
 
-var j = prompt (" PLZ ! Enter the Value : ", j )
-var result = 0
+function convert(){
 
-function convert(amount, convertTo){
+    var amount = document.getElementById('galonSelect').value;
+    var j = document.getElementById('literInput').value;
+    var result = "";
+        if (amount == "ltg"){
+            j  =  0.264172052 * j;
+            result = ("Your result is = " + j);
+            
+            } else if (amount == "gtl"){
+            j  =  3.78541178 * j;
+            result = ("Your result is = " + j);
+            } 
 
-    var amount = document.getElementById('amount').value;
-    var convertTo = document.getElementById('inputGroupSelect02').value;
-
-
-        if (amount == oneLiter){
-            oneLiter  =  0.264172052 * oneUSGallon
-            result += j * oneLiter
-            return result
-            } else if (amount == oneUsGallon){
-            oneUsGallon  =  3.78541178 * oneLiter
-            result += j * oneUsGallon
-            return result
-            } else {
-            alert("PLEASE SELECT THE CURRENCY")
+    document.getElementById('literText').innerHTML = result;
+            console.log(result);
         }
 
-}
-console.log(result);
 
 
-document.getElementById('Imp/L/G').innerHTML = result ;
 
-document.getElementById('Imp/L/G').onclick = function(){convert()};
+
+document.getElementById('literBtn').onclick = function(){convert()};
