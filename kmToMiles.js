@@ -9,9 +9,9 @@ function kmToMile () {
     var miles = document.getElementById('km').value;
     var typeOfConvert = document.getElementById('mileSelect').value;
     console.log(typeOfConvert);
-    if(typeOfConvert == 'km2mile'){
+    if(typeOfConvert == 'mile2km'){
         var result = miles *1.609;
-    }else if(typeOfConvert == 'mile2km'){
+    }else if(typeOfConvert == 'km2mile'){
         var result = miles * 0.621
     }
     document.getElementById('mile').innerHTML = ("Your result = .. " + result);   
