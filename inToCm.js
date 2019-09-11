@@ -4,7 +4,7 @@ function inToCm( ){
     
     var result = inch * 2.54
 
-    document.getElementById('inchText').innerHTML = ("Your result is = " + result);
+    return result
 }
 
 
