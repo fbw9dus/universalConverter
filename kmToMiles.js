@@ -9,11 +9,7 @@ function kmToMile () {
     var miles = document.getElementById('km').value;
     var typeOfConvert = document.getElementById('mileSelect').value;
     console.log(typeOfConvert);
-    if(typeOfConvert == 'mile2km'){
-        var result = miles *1.609;
-    }else if(typeOfConvert == 'km2mile'){
-        var result = miles * 0.621
-    }
+    var result = convert(miles, typeOfConvert)
     document.getElementById('mile').innerHTML = ("Your result = .. " + result);   
 }
 
@@ -30,13 +26,21 @@ function kmTomile (x) {
     return result;
 }
 console.log(kmTomile(miles));
+*/
+
+
+
 function convert(distance, typeOfConvert) {
+    var result
     if(typeOfConvert == 'km2mile'){
-        var result = distance *1.609;
+        result = distance *1.609
     }else if(typeOfConvert == 'mile2km'){
-        var result = distance * 0.621
+        result = distance * 0.621
     }
     return result;
   }
+
+/*
   console.log(miles+'miles ='+convert(miles, 'km2mile')+'km');
-  console.log(miles+'km ='+convert(miles, 'mile2km')+' miles');*/
+  console.log(miles+'km ='+convert(miles, 'mile2km')+' miles');
+  */
