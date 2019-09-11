@@ -7,12 +7,12 @@
 
 /* Return */
 // monthlyPayment:Number
-var monthlyPayment = 0;
-var numberOfPayments
-var interestRate
-var totalPrice
-function amount(){
 
-    var monthlyPayment = document.getElementById('paymentInput').value;
+function amount(){
+    var monthlyPayment = document.getElementById('monathlyPaymentInput').value;
+    var numberOfPayments=document.getElementById('numberOfPayments').value;
+    var interestRate=document.getElementById('interestRate').value;
+    var totalPrice=0;
+   
      return totalPrice=monthlyPayment*numberOfPayments+(monthlyPayment*numberOfPayments*interestRate)
 }
