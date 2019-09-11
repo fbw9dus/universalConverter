@@ -38,5 +38,5 @@ function convert(distance, typeOfConvert) {
     }
     return result;
   }
-  console.log(miles+'miles ='+convert(miles, 'mile2km')+'km');
-  console.log(miles+'km ='+convert(miles, 'km2mile')+' miles'); */
+  console.log(miles+'miles ='+convert(miles, 'km2mile')+'km');
+  console.log(miles+'km ='+convert(miles, 'mile2km')+' miles');*/
