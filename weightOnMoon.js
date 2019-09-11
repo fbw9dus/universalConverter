@@ -17,8 +17,26 @@
 
 
 
-function fun (weightOnErth){
+function fun(){
+
+    var weightOnErth = document.getElementById('moon').value;
+    
+    var weightOnMoon = weightOnErth / 6.125 
+
+    var weightOnMoon = weightOnMoon.toFixed(2)
+
+    document.getElementById('moonText').innerHTML = ("Your weight on moon is : " + weightOnMoon);
+
+   }
+
+   document.getElementById('moonBtn').onclick = function(){fun()}
+
+
+
+/**
+  function fun (weightOnErth){z
 
     var weightOnMoon = weightOnErth / 6.125 
    console.log(weightOnMoon)
    }
+   */

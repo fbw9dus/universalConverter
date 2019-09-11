@@ -3,6 +3,26 @@ km:Number
 
 /* Return */
 miles:Number
+
+
+function kmToMile () {
+    var miles = document.getElementById('km').value;
+    var typeOfConvert = document.getElementById('mileSelect').value;
+    console.log(typeOfConvert);
+    if(typeOfConvert == 'km2mile'){
+        var result = miles *1.609;
+    }else if(typeOfConvert == 'mile2km'){
+        var result = miles * 0.621
+    }
+    document.getElementById('mile').innerHTML = ("Your result = .. " + result);   
+}
+
+document.getElementById('milebtn').onclick = function(){kmToMile()};
+
+
+
+
+  /**miles:Number
 var miles = parseFloat(prompt("Please enter a number to compare it between Mile and Kilometer:"));
 var kilometers = miles * 1.609;
 function kmTomile (x) {
@@ -19,4 +39,4 @@ function convert(distance, typeOfConvert) {
     return result;
   }
   console.log(miles+'miles ='+convert(miles, 'mile2km')+'km');
-  console.log(miles+'km ='+convert(miles, 'km2mile')+' miles');
+  console.log(miles+'km ='+convert(miles, 'km2mile')+' miles'); */
