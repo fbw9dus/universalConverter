@@ -9,9 +9,9 @@ function kmToMile () {
     var miles = document.getElementById('km').value;
     var typeOfConvert = document.getElementById('mileSelect').value;
     console.log(typeOfConvert);
-    if(typeOfConvert == 'km2mile'){
+    if(typeOfConvert == 'mile2km'){
         var result = miles *1.609;
-    }else if(typeOfConvert == 'mile2km'){
+    }else if(typeOfConvert == 'km2mile'){
         var result = miles * 0.621
     }
     document.getElementById('mile').innerHTML = ("Your result = .. " + result);   
@@ -38,5 +38,5 @@ function convert(distance, typeOfConvert) {
     }
     return result;
   }
-  console.log(miles+'miles ='+convert(miles, 'mile2km')+'km');
-  console.log(miles+'km ='+convert(miles, 'km2mile')+' miles'); */
+  console.log(miles+'miles ='+convert(miles, 'km2mile')+'km');
+  console.log(miles+'km ='+convert(miles, 'mile2km')+' miles');*/
