@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="poundToKg.js"></script>
 
     <title>JavaScript Labs</title>
 </head>
@@ -125,17 +124,21 @@
           <button id="literBtn">Convert</button>
         </div>
 
-       
+       <div id="poundTokg">
+         <h5></h5>
+         <input type="text" id="pound">
+         <h4 id="kgOut"></h4>
+       </div>
       
 
 
 </div>
-      
+    
 
-  <script src="galonsToLiter.js"></script>
-      <script src="star.js"></script>
-      <script src="inToCm.js"></script>    
-   
+    <script src="galonsToLiter.js"></script>
+    <script src="star.js"></script>
+    <script src="inToCm.js"></script>    
+    <script src="poundToKg.js"></script>
     <script src="weightOnMoon.js"></script> 
     <script src="kmToMiles.js"></script> 
     <script src="main.js"></script>
@@ -146,6 +149,22 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script>
+        /* pound to kg */
+        document.getElementById("pound").onkeyup = function(e){
+          document.getElementById("kgOut").innerText = poundkg()
+        }
+
+        /* gallons and liter */
+        document.getElementById('literBtn').onclick = function(){
+          var galLitAmount = document.getElementById('literInput').value;
+          var gatLitDirection = document.getElementById('galonSelect').value;
+          var galLitResult = fuel(galLitAmount, gatLitDirection)
+          document.getElementById('literText').innerHTML = ("Your result is = " + galLitResult);
+        };
+        
+    </script>
   </body>
     
 </body>

@@ -7,25 +7,23 @@
 // liter:Number
 
 
-function fuel(){
-   
-    var amount = document.getElementById('galonSelect').value;
-    var j = document.getElementById('literInput').value;
-    console.log(j);
-        if (amount == 'ltg'){
-            j  =  0.264172052 * j;            
-            }  else if (amount == 'gtl'){
-                j  =  3.78541178 * j;          
-            } 
+function fuel(amount, dir){
+    var result
+    if (dir == 'ltg'){
+        result  =  0.264172052 * amount;            
+    }  else if (dir == 'gtl'){
+        result  =  3.78541178 * amount;          
+    } 
 
-        j = j.toFixed(2);
+    result = result.toFixed(2);
     
-    document.getElementById('literText').innerHTML = ("Your result is = " + j);
- }
+    
+    return result
+}
 
 
 
 
 
-document.getElementById('literBtn').onclick = function(){fuel()};
+
 
